@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\bot\\\\api\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\bot\\\\commands\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\bot\\\\events\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\bot\\\\utils\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\bot\\\\cron\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\dashboard\\\\src\\\\pages\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\dashboard\\\\src\\\\components\")",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\dashboard\\\\src\\\\utils\")",
+      "Bash(Write-Host \"Dossiers créés\")",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\" | Where-Object { !$_.PSIsContainer } | Select-Object FullName | Sort-Object FullName)",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\" -File | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\gorth\\\\Desktop\\\\DEV\\\\Bot_Discord\\\\Bot_Wolf\\\\\",\"\"\\) })"
+    ]
+  }
+}
